@@ -1,0 +1,33 @@
+{
+   "name": "flip-lang-vscode",
+   "displayName": "Flip Lang for vscode",
+   "description": "Syntax highlighter for Flip files",
+   "version": "0.0.1",
+   "publisher": "ohmtech",
+   "repository": {
+      "url": "https://github.com/ohmtech/flip-lang-vscode"
+   },
+   "homepage": "https://github.com/ohmtech/flip-lang-vscode/blob/master/README.md",
+	"icon": "images/flip-logo.jpg",
+   "engines": {
+      "vscode": "^1.34.0"
+   },
+   "categories": [
+      "Programming Languages"
+   ],
+   "contributes": {
+      "languages": [{
+            "id": "flip",
+            "aliases": ["Flip", "flip"],
+            "extensions": [".flip"],
+            "configuration": "./language-configuration.json"
+         }
+      ],
+      "grammars": [{
+            "language": "flip",
+            "scopeName": "source.flip",
+            "path": "./syntaxes/flip.tmLanguage.json"
+         }
+      ]
+   }
+}
