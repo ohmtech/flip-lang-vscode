@@ -1,0 +1,110 @@
+{
+   "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+   "name": "Flip",
+   "patterns": [
+      {
+         "include": "#storages"
+      },
+      {
+         "include": "#keywords"
+      },
+      {
+         "include": "#variables"
+      },
+      {
+         "include": "#strings"
+      },
+      {
+         "include": "#comments"
+      }
+   ],
+   "repository": {
+      "storages": {
+         "patterns": [
+            {
+               "name": "storage.type.model.flip",
+               "match": "\\b(model)\\b"
+            },
+            {
+               "name": "storage.type.class.flip",
+               "match": "\\b(class)\\b"
+            },
+            {
+               "name": "storage.type.enum.flip",
+               "match": "\\b(enum)\\b"
+            },
+            {
+               "name": "storage.type.primitive.flip",
+               "match": "\\b(Array|Bool|Blob|Collection|Float|Int|Message|Map|ObjectRef|Optional|String|Variant|Vector)\\b"
+            },
+            {
+               "name": "storage.modifier.flip",
+               "match": "\\b(version|extends|abstract)\\b"
+            },
+            {
+               "name": "storage.type.function.signal.flip",
+               "match": "\\b(signal)\\b"
+            },
+            {
+               "name": "storage.type.function.invariant.flip",
+               "match": "\\b(invariant)\\b"
+            }
+         ]
+      },
+      "keywords": {
+         "patterns": [
+            {
+               "name": "keyword.control.return.flip",
+               "match": "\\b(return)\\b"
+            },
+            {
+               "name": "keyword.other.typealias.flip",
+               "match": "\\b(typealias)\\b"
+            }
+         ]
+      },
+      "variables": {
+         "patterns": [
+            {
+               "name": "variable.language.self.flip",
+               "match": "\\b(self)\\b"
+            }
+         ]
+      },
+      "strings": {
+         "name": "string.quoted.double.flip",
+         "begin": "\"",
+         "end": "\"",
+         "patterns": [
+            {
+               "name": "constant.character.escape.flip",
+               "match": "\\\\."
+            }
+         ]
+      },
+      "comments": {
+         "patterns": [
+            {
+               "begin": "/\\*",
+               "captures": {
+                  "0": {
+                     "name": "punctuation.definition.comment.flip"
+                  }
+               },
+               "end": "\\*/",
+               "name": "comment.block.flip"
+            },
+            {
+               "captures": {
+                  "1": {
+                     "name": "punctuation.definition.comment.flip"
+                  }
+               },
+               "match": "(//).*$\\n?",
+               "name": "comment.line.double-slash.flip"
+            }
+         ]
+      }
+   },
+   "scopeName": "source.flip"
+}
