@@ -15,6 +15,9 @@
          "include": "#strings"
       },
       {
+         "include": "#numbers"
+      },
+      {
          "include": "#comments"
       }
    ],
@@ -35,7 +38,7 @@
             },
             {
                "name": "storage.type.primitive.flip",
-               "match": "\\b(Array|Bool|Blob|Collection|Float|Int|Message|Map|ObjectRef|Optional|String|Variant|Vector)\\b"
+               "match": "\\b(Array|Bool|Blob|Collection|Float|Float32|Float64|Int|Message|Map|ObjectRef|Optional|String|Variant|Vector|FixedSizeArray)\\b"
             },
             {
                "name": "storage.modifier.flip",
@@ -79,6 +82,14 @@
             {
                "name": "constant.character.escape.flip",
                "match": "\\\\."
+            }
+         ]
+      },
+      "numbers": {
+         "patterns": [
+            {
+               "name": "constant.numeric.integer.flip",
+               "match": "\\b[0-9]+\\b"
             }
          ]
       },
