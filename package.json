@@ -2,7 +2,7 @@
    "name": "flip-lang-vscode",
    "displayName": "Flip Lang for vscode",
    "description": "Syntax highlighter for Flip files",
-   "version": "0.0.2",
+   "version": "0.0.3",
    "publisher": "ohmtech",
    "repository": {
       "url": "https://github.com/ohmtech/flip-lang-vscode"
