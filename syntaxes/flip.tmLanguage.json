@@ -33,6 +33,10 @@
                "match": "\\b(class)\\b"
             },
             {
+               "name": "storage.type.data.flip",
+               "match": "\\b(data)\\b"
+            },
+            {
                "name": "storage.type.enum.flip",
                "match": "\\b(enum)\\b"
             },

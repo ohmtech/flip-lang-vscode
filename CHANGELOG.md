@@ -2,6 +2,11 @@
 
 All notable changes to the "flip-lang-vscode" extension will be documented in this file.
 
+## [0.0.3]
+
+- Add support for `data` type
+- Add parens brackets symbol support
+
 ## [0.0.2]
 
 - Add support for `FixedSizeArray`, `Float32`, and `Float64` types
